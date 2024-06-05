@@ -163,8 +163,8 @@ var botProgram = {
                 if(botProgram.tutorial_step < 1) botProgram.tutorial_step = 1;
                 await botProgram.goToTutorialPage(callback_data.message);
                 return;
-            } else if(command == GENERAL_ACTION.TUTORIAL_PREV) {
-                botProgram.tutorial_step--;
+            } else if(command == GENERAL_ACTION.TUTORIAL_NEXT) {
+                botProgram.tutorial_step++;
                 if(botProgram.tutorial_step < 1) botProgram.tutorial_step = 1;
                 await botProgram.goToTutorialPage(callback_data.message);
                 return;
